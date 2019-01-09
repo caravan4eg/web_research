@@ -8,6 +8,7 @@ def get_html(url):
     if r.ok:  # server's response == 200
         return r.text
     else:
+        print(r.status_code)
         return r.status_code
 
 
@@ -15,6 +16,7 @@ def get_page_data(html):
     soup = BeautifulSoup(html, 'lxml')
 
     trs = soup.find('table', class_='projects-table projects-table_catalogue').find('tbody').find_all('tr', class_='projects-table__row ')
+    print('here1')
     print(len(trs))
     cnt = 0
 
@@ -50,6 +52,7 @@ def get_page_data(html):
         	p, popularity = ''
 
         cnt += 1
+        print('cnt')
         print(f'{cnt}. {name}, {url} (visits:{visits}, views:{looks}, popularity: {popularity})')
 
         data = {'name': name,
