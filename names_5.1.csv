@@ -19,3 +19,12 @@ Ivan,Ivanov,19
 Jhon,Middle,32
 Kate,Smith,25
 Ivan,Ivanov,19
+<<<<<<< HEAD
+Jhon,Middle,32
+Kate,Smith,25
+Ivan,Ivanov,19
+Jhon,Middle,32
+Kate,Smith,25
+Ivan,Ivanov,19
+=======
+>>>>>>> a1e8bf5f244fe3c166642c6a51558b8b9c78195c
